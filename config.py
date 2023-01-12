@@ -12,7 +12,7 @@ class Settings(BaseSettings):
     JWT_ENCODE_KEY: str = os.getenv('JWT_ENCODE_KEY')
     JWT_ALGORITHM: str = os.getenv('JWT_ALGORITHM')
 
-    ACCESS_TOKEN_EXPIRE_MINUTES = 30
+    ACCESS_TOKEN_EXPIRE_MINUTES = os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES')
     #   API for verify email with abstractapi.com
     VERIFY_EMAIL_API_KEY: str = os.getenv('VERIFY_EMAIL_API_KEY')
 
